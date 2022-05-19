@@ -15,7 +15,7 @@ class PosAndRotViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         sideMenuBtn.target = revealViewController()
-                sideMenuBtn.action = #selector(revealViewController()?.revealSideMenu)
+        sideMenuBtn.action = #selector(revealViewController()?.revealSideMenu)
         navBar?.standardAppearance.backgroundColor = UIColor.clear
             navBar?.standardAppearance.backgroundEffect = nil
             navBar?.standardAppearance.shadowImage = UIImage()
@@ -26,7 +26,10 @@ class PosAndRotViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-
+    @IBAction func positionHome(_ sender: Any) {
+        
+    }
+    
     /*
     // MARK: - Navigation
 
