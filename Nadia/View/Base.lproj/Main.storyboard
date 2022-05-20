@@ -143,7 +143,6 @@
         <!--Pos And Rot View Controller-->
         <scene sceneID="Ynv-aP-Vtv">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="2Sm-Pc-QOB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <viewController storyboardIdentifier="PosID" id="yWo-jV-jNe" customClass="PosAndRotViewController" customModule="Nadia" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Nzx-hc-nvK">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
@@ -189,6 +188,7 @@
                         <outlet property="sideMenuBtn" destination="V0Z-1y-q34" id="sIo-bR-dUa"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2Sm-Pc-QOB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3757" y="84"/>
         </scene>
