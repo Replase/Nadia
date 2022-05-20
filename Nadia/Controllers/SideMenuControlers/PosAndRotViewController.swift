@@ -7,11 +7,17 @@
 
 import UIKit
 
-class PosAndRotViewController: UIViewController {
+class PosAndRotViewController: UIViewController, UIScrollViewDelegate {
 
     @IBOutlet weak var exitBtn: UIBarButtonItem!
     @IBOutlet weak var navBar: UINavigationBar!
     @IBOutlet weak var sideMenuBtn: UIBarButtonItem!
+    @IBOutlet weak var posicionesCollection: UICollectionView!
+    
+    var image: [String] = ["patron","patron","patron","patron","patron"]
+    var texto: [String] = ["uno","dos","tres","cuatro","cinco"]
+    var colors: [UIColor] = [.red,.green,.blue,.white,.cyan]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         sideMenuBtn.target = revealViewController()
@@ -24,20 +30,21 @@ class PosAndRotViewController: UIViewController {
         exitBtn.target = revealViewController()
         exitBtn.action = #selector(revealViewController()?.exitAll)
         // Do any additional setup after loading the view.
-    }
-    
-    @IBAction func positionHome(_ sender: Any) {
         
     }
     
-    /*
-    // MARK: - Navigation
+}
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+extension PosAndRotViewController: UICollectionViewDelegate, UICollectionViewDataSource {
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return image.count
     }
-    */
-
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = posicionesCollection.dequeueReusableCell(withReuseIdentifier: "celdaCollection", for: indexPath) as! PosicionesCollectionViewCell
+        cell.imageCollection.image = UIImage(named: self.image[indexPath])
+        
+    }
+    
+    
 }
