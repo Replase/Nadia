@@ -12,12 +12,8 @@ class PosAndRotViewController: UIViewController, UIScrollViewDelegate {
     @IBOutlet weak var exitBtn: UIBarButtonItem!
     @IBOutlet weak var navBar: UINavigationBar!
     @IBOutlet weak var sideMenuBtn: UIBarButtonItem!
-    @IBOutlet weak var posicionesCollection: UICollectionView!
     
-    var image: [String] = ["patron","patron","patron","patron","patron"]
-    var texto: [String] = ["uno","dos","tres","cuatro","cinco"]
-    var colors: [UIColor] = [.red,.green,.blue,.white,.cyan]
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         sideMenuBtn.target = revealViewController()
@@ -35,16 +31,5 @@ class PosAndRotViewController: UIViewController, UIScrollViewDelegate {
     
 }
 
-extension PosAndRotViewController: UICollectionViewDelegate, UICollectionViewDataSource {
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return image.count
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = posicionesCollection.dequeueReusableCell(withReuseIdentifier: "celdaCollection", for: indexPath) as! PosicionesCollectionViewCell
-        cell.imageCollection.image = UIImage(named: self.image[indexPath])
-        
-    }
     
     
-}
