@@ -18,6 +18,8 @@
 		634495E02836B08B006A4549 /* MiEquipoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 634495DF2836B08B006A4549 /* MiEquipoViewController.swift */; };
 		634495E22836B09E006A4549 /* PoliticasViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 634495E12836B09E006A4549 /* PoliticasViewController.swift */; };
 		634CF8D128380B2400F927F7 /* PosicionesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 634CF8D028380B2400F927F7 /* PosicionesCollectionViewCell.swift */; };
+		63B182E4283D81950041CE1A /* InicioSesionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63B182E3283D81940041CE1A /* InicioSesionViewController.swift */; };
+		63B182E6283D823B0041CE1A /* RegistroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63B182E5283D823B0041CE1A /* RegistroViewController.swift */; };
 		63D2FA85283560E500D5C429 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63D2FA84283560E500D5C429 /* AppDelegate.swift */; };
 		63D2FA87283560E500D5C429 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63D2FA86283560E500D5C429 /* SceneDelegate.swift */; };
 		63D2FA8C283560E600D5C429 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63D2FA8A283560E600D5C429 /* Main.storyboard */; };
@@ -37,6 +39,8 @@
 		634495DF2836B08B006A4549 /* MiEquipoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiEquipoViewController.swift; sourceTree = "<group>"; };
 		634495E12836B09E006A4549 /* PoliticasViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoliticasViewController.swift; sourceTree = "<group>"; };
 		634CF8D028380B2400F927F7 /* PosicionesCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PosicionesCollectionViewCell.swift; sourceTree = "<group>"; };
+		63B182E3283D81940041CE1A /* InicioSesionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InicioSesionViewController.swift; sourceTree = "<group>"; };
+		63B182E5283D823B0041CE1A /* RegistroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistroViewController.swift; sourceTree = "<group>"; };
 		63D2FA81283560E500D5C429 /* Nadia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Nadia.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		63D2FA84283560E500D5C429 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		63D2FA86283560E500D5C429 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -100,6 +104,8 @@
 				634CF8CF28380AE400F927F7 /* CollectionCell */,
 				634495C928369010006A4549 /* SideMenuControlers */,
 				634495CA28369037006A4549 /* SideMenu */,
+				63B182E3283D81940041CE1A /* InicioSesionViewController.swift */,
+				63B182E5283D823B0041CE1A /* RegistroViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -222,11 +228,13 @@
 				63D2FA85283560E500D5C429 /* AppDelegate.swift in Sources */,
 				634495E02836B08B006A4549 /* MiEquipoViewController.swift in Sources */,
 				634495DE2836B07C006A4549 /* ReglamentoViewController.swift in Sources */,
+				63B182E4283D81950041CE1A /* InicioSesionViewController.swift in Sources */,
 				63D2FA87283560E500D5C429 /* SceneDelegate.swift in Sources */,
 				634495DC283699D4006A4549 /* PosAndRotViewController.swift in Sources */,
 				634495D8283693B0006A4549 /* HomeViewController.swift in Sources */,
 				634CF8D128380B2400F927F7 /* PosicionesCollectionViewCell.swift in Sources */,
 				634495E22836B09E006A4549 /* PoliticasViewController.swift in Sources */,
+				63B182E6283D823B0041CE1A /* RegistroViewController.swift in Sources */,
 				634495CE283690B9006A4549 /* SideMenuViewController.swift in Sources */,
 				634495DA283693C2006A4549 /* MainViewController.swift in Sources */,
 			);

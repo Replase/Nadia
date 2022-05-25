@@ -12,6 +12,9 @@ class ReglamentoViewController: UIViewController {
     @IBOutlet weak var exitBtn: UIBarButtonItem!
     @IBOutlet weak var sideMenuBtn: UIBarButtonItem!
     @IBOutlet weak var navBar: UINavigationBar!
+    
+    //Botón
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         sideMenuBtn.target = revealViewController()
@@ -27,7 +30,14 @@ class ReglamentoViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-
+    @IBAction func irEnlace(_ sender: UIButton) {
+        if let url = URL(string: "http://www.apple.com") {
+            if UIApplication.shared.canOpenURL(url) {
+                UIApplication.shared.open(url, options: [:])
+            }
+        }
+    }
+    
     /*
     // MARK: - Navigation
 
