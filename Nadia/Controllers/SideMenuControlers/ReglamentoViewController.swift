@@ -31,7 +31,7 @@ class ReglamentoViewController: UIViewController {
     }
     
     @IBAction func irEnlace(_ sender: UIButton) {
-        if let url = URL(string: "http://www.apple.com") {
+        if let url = URL(string: "https://www.fivb.org/EN/Refereeing-Rules/documents/FIVB-Volleyball_Rules_2017-2020-SP-v01.pdf") {
             if UIApplication.shared.canOpenURL(url) {
                 UIApplication.shared.open(url, options: [:])
             }
